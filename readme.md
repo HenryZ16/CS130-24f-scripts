@@ -23,3 +23,11 @@ python3 check-gitlab.py <groupId> <commitCnt>
 其中，
 - `groupId` 为接受检查的小组编号，为一个整数
 - `commitCnt` 为输出的 commit 数量，为一个整数；或`inf`，表示不限制数量
+
+#### 配置
+
+你需要将`check-gitlab.yaml`手动添加到与`check-gitlab.py`相同的目录中。`check-gitlab.yaml`的内容为：
+```yaml
+password: <password>
+```
+其中，`<password>`为登录gitlab root用户所使用的密码。如果你是TA，请联系授课教师以获取密码。
