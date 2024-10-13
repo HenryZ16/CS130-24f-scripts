@@ -22,4 +22,4 @@ python3 check-gitlab.py <groupId> <commitCnt>
 
 其中，
 - `groupId` 为接受检查的小组编号，为一个整数
-- `commitCnt` 为输出的 commit 数量，为一个整数或`inf`，表示不限制数量
+- `commitCnt` 为输出的 commit 数量，为一个整数；或`inf`，表示不限制数量
