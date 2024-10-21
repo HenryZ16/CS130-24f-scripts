@@ -57,6 +57,8 @@ class GitlabAdmin:
             return
 
         s_groupId = groupId if (int(groupId) >= 10) else ("0" + groupId)
+        if s_groupId == "26":
+            s_groupId = "-26"
         url = f"http://10.15.29.208/pintos/group{s_groupId}/-/commits/main"
         response = self.session.get(url)
 
